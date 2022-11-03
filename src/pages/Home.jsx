@@ -1,12 +1,11 @@
 import '../styles/index.css'
 
-function App() {
+function Home() {
   return (
     <div>
-
 
     </div>
   );
 }
 
-export default App;
+export default Home;
