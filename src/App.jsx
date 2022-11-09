@@ -1,5 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 
+import Header from './components/Header'
+
 import Home from './pages/Home'
 import About from './pages/About'
 import Error404 from './pages/Error404'
@@ -10,7 +12,9 @@ import './styles/index.css'
 function App() {
     return (
         <div className="App">
-            <header></header>
+            <header>
+                <Header />
+            </header>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
