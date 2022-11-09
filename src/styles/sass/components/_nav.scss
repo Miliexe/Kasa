@@ -1,0 +1,54 @@
+.nav {
+  display: flex;
+  position: relative;
+
+  ul {
+    display: flex;
+    margin: 20px 0px;
+
+    a {
+      margin-left: 15px;
+      @include mq(desktop){
+        margin-left: 30px;
+      }
+
+      li {
+        color: $primary;
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+          color: darken($primary, 25%);
+        }
+      }
+    }
+  }
+
+  &--active {
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 1px;
+      width: 0;
+      background: $primary;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-animation: anim 0.3s ease forwards;
+      animation: anim 0.6s ease forwards;
+
+      @-webkit-keyframes anim {
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes anim {
+        to {
+          width: 100%;
+        }
+      
+      }
+    }
+  }
+}

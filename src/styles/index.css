@@ -7,7 +7,21 @@
 }
 
 body {
-  margin: 0px;
+  margin: 40px 20px;
+}
+@media screen and (min-width: 576px) {
+  body {
+    margin: 40px 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    margin: 40px 60px;
+  }
+}
+
+a {
+  text-decoration: none;
 }
 
 li {
@@ -16,7 +30,6 @@ li {
 
 * {
   font-family: "Oswald";
-  color: #FF6060;
 }
 
 h1 {
@@ -29,6 +42,74 @@ h2 {
 
 p {
   font-weight: 300;
+}
+
+.nav {
+  display: flex;
+  position: relative;
+}
+.nav ul {
+  display: flex;
+  margin: 20px 0px;
+}
+.nav ul a {
+  margin-left: 15px;
+}
+@media screen and (min-width: 992px) {
+  .nav ul a {
+    margin-left: 30px;
+  }
+}
+.nav ul a li {
+  color: #FF6060;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.nav ul a li:hover {
+  color: #e00000;
+}
+.nav--active {
+  position: relative;
+}
+.nav--active::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background: #FF6060;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: anim 0.3s ease forwards;
+  animation: anim 0.6s ease forwards;
+}
+@-webkit-keyframes anim {
+  to {
+    width: 100%;
+  }
+}
+@keyframes anim {
+  to {
+    width: 100%;
+  }
+}
+
+.logo--mobile {
+  height: 47px;
+  width: 145px;
+}
+@media screen and (min-width: 992px) {
+  .logo--desktop {
+    height: 68px;
+    width: 210px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0px 10px 0px;
+  position: relative;
 }
 
 /*# sourceMappingURL=index.css.map */

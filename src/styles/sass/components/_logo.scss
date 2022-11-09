@@ -1,0 +1,13 @@
+.logo {
+    &--mobile {
+        height: 47px;
+        width: 145px;
+        }
+    
+    &--desktop {
+        @include mq(desktop){
+        height: 68px;
+        width: 210px;
+        }
+    }    
+}
