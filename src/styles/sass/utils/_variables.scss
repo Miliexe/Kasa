@@ -10,3 +10,14 @@ $container-bg: #F6F6F6;
 $light: 300;
 $regular: 400;
 $medium: 500;
+
+// Breakpoints
+$mobile: 375px;
+$tablet: 576px;
+$desktop: 992px;
+
+$breakpoints: (
+  mobile: $mobile,
+  tablet: $tablet,
+  desktop: $desktop
+);
