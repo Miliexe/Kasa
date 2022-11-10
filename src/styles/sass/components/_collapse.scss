@@ -1,0 +1,46 @@
+
+.collapse {
+    height:47px;
+    background-color: $primary;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        }
+    & .active, .collapse__content{
+        display: block;
+      }
+    
+    &__content{
+        border-radius: 5px;
+        padding: 25px 20px;
+        // display: none;
+        overflow: hidden;
+        background-color: $container-bg;
+        height: fit-content;
+        color: $primary;
+    }
+
+    // &--vector{
+    //     right: 0px;
+    //     display: flex;
+    //     position: relative;
+    //     width: 32px;
+    //     height: 32px;
+    //     background-image: url(../asset/vector.png);
+    //     background-repeat: no-repeat;
+    // }
+    // &--enable{
+
+    // }
+}

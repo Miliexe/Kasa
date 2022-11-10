@@ -1,11 +1,16 @@
 import React from 'react'
 import Gallery from '../components/Gallery'
-import HomeBanner from '../components/HomeBanner'
+import Banner from '../components/Banner'
+import Image from '../asset/home__banner.png'
 
 const Home = () => {
     return (
         <div className="home">
-            <HomeBanner />
+            <Banner
+                img={Image}
+                txt="Chez vous,
+                partout et ailleurs"
+            />
             <Gallery />
         </div>
     )
