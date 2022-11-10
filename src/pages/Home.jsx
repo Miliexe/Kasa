@@ -1,10 +1,12 @@
 import React from 'react'
-import HomeBody from '../components/HomeBody'
+import Gallery from '../components/Gallery'
+import HomeBanner from '../components/HomeBanner'
 
 const Home = () => {
     return (
-        <div>
-            <HomeBody />
+        <div className="home">
+            <HomeBanner />
+            <Gallery />
         </div>
     )
 }

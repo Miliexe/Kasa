@@ -1,0 +1,30 @@
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    &_banner{
+        margin: 0px;
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;
+        width: 100%;
+        height: 223px;
+        @include mq(tablet){
+            margin: 30px 0px;  
+        }
+
+        &__image{
+            display: flex;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 25px;
+            background-image: url("../asset/about__banner_m.png");
+            @include mq(tablet){
+                background-image: url("../asset/about__banner.png");
+            }
+        }
+    }
+}
