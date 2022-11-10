@@ -2,7 +2,6 @@
   "name": "kasa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Miliexe.github.io/Kasa/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -20,9 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass --watch ./src/styles/sass/main.scss:./src/styles/index.css",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "sass": "sass --watch ./src/styles/sass/main.scss:./src/styles/index.css"
   },
   "eslintConfig": {
     "extends": [
@@ -41,8 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
 }
