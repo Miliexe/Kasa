@@ -1,8 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
 
-*{font-family: 'Oswald';}
+*{font-family: 'Montserrat', sans-serif;}
 
-h1{font-weight: $medium;}
+h1{
+    font-weight: $medium;
+    color: $secondary;
+    font-size: 24px;
+    @include mq(tablet){
+        font-size: 30px;
+    }
+    @include mq(desktop){
+        font-size: 48px;
+    }
+}
 
 h2{font-weight: $regular;}
 
