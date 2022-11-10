@@ -53,8 +53,10 @@ h1 {
   }
 }
 
-h2 {
-  font-weight: 300;
+h3 {
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 20px;
 }
 
 p {
@@ -158,8 +160,13 @@ p {
   height: 255px;
   border-radius: 25px;
   width: 100%;
-  background: none;
+  display: flex;
+  position: relative;
+  background-color: black;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.gallery__card:hover {
+  background: linear-gradient(180deg, rgb(255, 96, 96) 0%, rgb(0, 0, 0) 80%);
 }
 @media screen and (min-width: 992px) {
   .gallery__card {
@@ -168,6 +175,7 @@ p {
   }
 }
 .gallery__card img {
+  opacity: 0.7;
   border-radius: 25px;
   object-fit: cover;
   width: 100%;
@@ -177,6 +185,34 @@ p {
   .gallery__card img {
     width: 340px;
     height: 340px;
+  }
+}
+.gallery__card img:hover {
+  transition: 0.6s;
+  opacity: 0.2;
+}
+.gallery__card .card__title {
+  margin: 0;
+  height: 45px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 16%;
+  width: 100%;
+  bottom: 20px;
+  position: absolute;
+  background: none;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+@media screen and (min-width: 576px) {
+  .gallery__card .card__title {
+    bottom: 12px;
+    padding-right: 35%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .gallery__card .card__title {
+    bottom: 20px;
+    padding-right: 17%;
   }
 }
 .gallery__card:hover {

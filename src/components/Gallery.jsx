@@ -13,6 +13,7 @@ const Gallery = () => {
                         key={item.id}
                     >
                         <img src={item.cover} alt={item.title} />
+                        <h3 className="card__title">{item.title}</h3>
                     </Link>
                 )
             })}
