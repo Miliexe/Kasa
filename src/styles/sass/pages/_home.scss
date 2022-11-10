@@ -1,6 +1,7 @@
 .home{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 
     &_banner{
         margin: 0px;
