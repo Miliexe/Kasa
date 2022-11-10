@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 import Home from './pages/Home'
 import About from './pages/About'
@@ -21,7 +22,9 @@ function App() {
                 <Route path="/*" element={<Error404 />} />
                 <Route path="/product/:id" element={<Product />} />
             </Routes>
-            <footer></footer>
+            <footer className="footer">
+                <Footer />
+            </footer>
         </div>
     )
 }
