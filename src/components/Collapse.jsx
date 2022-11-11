@@ -32,18 +32,16 @@ const Collapse = ({ title, content }) => {
                 typeof="button"
                 onClick={stateCollapseUpdate}
             >
-                {title}
+                <h6 className="collapse__title">{title}</h6>
                 <img
-                    className="collapse--vector"
+                    className="collapse__vector"
                     src={stateCollapse ? VectorF : VectorT}
                     alt="vector"
                 />
             </button>
 
             {stateCollapse ? (
-                <div className="collapse__title">
-                    <div className="collapse__content">{content}</div>
-                </div>
+                <div className="collapse__content">{content}</div>
             ) : null}
         </div>
     )
