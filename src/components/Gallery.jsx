@@ -7,7 +7,12 @@ const Gallery = () => {
         <div className="gallery">
             {Data.map((item) => {
                 return (
-                    <Card id={item.id} cover={item.cover} title={item.title} />
+                    <Card
+                        id={item.id}
+                        cover={item.cover}
+                        title={item.title}
+                        key={item.id}
+                    />
                 )
             })}
         </div>
