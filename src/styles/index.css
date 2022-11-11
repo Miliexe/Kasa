@@ -257,6 +257,7 @@ p {
   text-align: center;
   height: 209px;
   width: 100%;
+  min-width: 375px;
   background-color: #000000;
   position: absolute;
   left: 0;
@@ -306,14 +307,11 @@ p {
 }
 .home_banner__image {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-align-items: center;
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  object-fit: cover;
   border-radius: 25px;
+  position: absolute;
+  height: 100%;
 }
 .home_banner__title {
   margin: 0;
@@ -321,9 +319,10 @@ p {
   text-align: left;
   padding-left: 20px;
   width: 100%;
-  padding-right: 25%;
+  padding-right: 30%;
   position: relative;
   background: none;
+  margin: auto;
 }
 @media screen and (min-width: 576px) {
   .home_banner__title {
