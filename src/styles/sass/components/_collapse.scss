@@ -12,16 +12,9 @@
     display: block ruby;
     position: relative;
 
-    &__container{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
-        height: fit-content;
-        }
-    & .active, .collapse__content{
-        display: block;
-      }
+    &-container{
+        margin-bottom: 30px;
+    }
     
     &__title{
         font-weight: $regular;

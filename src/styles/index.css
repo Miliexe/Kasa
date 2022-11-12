@@ -136,15 +136,8 @@ p {
   display: block ruby;
   position: relative;
 }
-.collapse__container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 100%;
-  height: fit-content;
-}
-.collapse .active, .collapse .collapse__content {
-  display: block;
+.collapse-container {
+  margin-bottom: 30px;
 }
 .collapse__title {
   font-weight: 300;

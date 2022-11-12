@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import VectorT from '../asset/vector_t.png'
 import VectorF from '../asset/vector_f.png'
+import Data from '../data/about.json'
 
 const Collapse = ({ title, content }) => {
     var coll = document.getElementsByClassName('collapse')
@@ -25,26 +26,28 @@ const Collapse = ({ title, content }) => {
         console.log(stateCollapse)
     }
 
-    return (
-        <div className="collapse-container">
-            <button
-                className="collapse"
-                typeof="button"
-                onClick={stateCollapseUpdate}
-            >
-                <h6 className="collapse__title">{title}</h6>
-                <img
-                    className="collapse__vector"
-                    src={stateCollapse ? VectorF : VectorT}
-                    alt="vector"
-                />
-            </button>
+    return Data.map((item) => {
+        return (
+            <div className="collapse-container">
+                <button
+                    className="collapse"
+                    typeof="button"
+                    onClick={stateCollapseUpdate}
+                >
+                    <h6 className="collapse__title">{item.title}</h6>
+                    <img
+                        className="collapse__vector"
+                        src={stateCollapse ? VectorF : VectorT}
+                        alt="vector"
+                    />
+                </button>
 
-            {stateCollapse ? (
-                <div className="collapse__content">{content}</div>
-            ) : null}
-        </div>
-    )
+                {stateCollapse ? (
+                    <div className="collapse__content">{item.content}</div>
+                ) : null}
+            </div>
+        )
+    })
 }
 
 export default Collapse
