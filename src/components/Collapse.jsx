@@ -28,7 +28,7 @@ const Collapse = ({ title, content }) => {
 
     return Data.map((item) => {
         return (
-            <div className="collapse-container">
+            <div className="collapse-container" key={item.id}>
                 <button
                     className="collapse"
                     typeof="button"
