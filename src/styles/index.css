@@ -391,31 +391,35 @@ p {
   flex-wrap: wrap;
   flex-direction: column;
 }
-.about_banner {
-  margin: 0px;
+.about .banner {
+  margin: 30px 0px;
   display: flex;
   flex-wrap: nowrap;
   position: relative;
-  width: 100%;
   height: 223px;
+  width: 100%;
+  border-radius: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../asset/about__banner_m.png");
 }
 @media screen and (min-width: 576px) {
-  .about_banner {
+  .about .banner {
     margin: 30px 0px;
   }
 }
-.about_banner__image {
-  display: flex;
+.about .banner__image {
+  display: none;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 25px;
-  background-image: url("../asset/about__banner_m.png");
 }
 @media screen and (min-width: 576px) {
-  .about_banner__image {
-    background-image: url("../asset/about__banner.png");
+  .about .banner__image {
+    display: flex;
   }
 }
 
