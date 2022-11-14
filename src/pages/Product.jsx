@@ -1,5 +1,11 @@
+import Slideshow from '../components/Slideshow'
+
 function Product() {
-    return <div>Product</div>
+    return (
+        <div>
+            <Slideshow />
+        </div>
+    )
 }
 
 export default Product

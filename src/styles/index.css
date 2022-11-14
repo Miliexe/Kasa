@@ -203,6 +203,16 @@ p {
   }
 }
 
+.slideshow {
+  padding-top: 40px;
+  margin: auto;
+  width: 1240px;
+}
+.slideshow img {
+  height: 415px;
+  object-fit: cover;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;

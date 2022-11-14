@@ -1,0 +1,10 @@
+.slideshow{
+    padding-top: 40px;
+    margin: auto;
+    width: 1240px;
+
+    & img{
+        height: 415px;
+        object-fit: cover;
+    }
+}
