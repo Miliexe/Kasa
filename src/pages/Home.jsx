@@ -1,10 +1,17 @@
 import React from 'react'
-import HomeBody from '../components/HomeBody'
+import Gallery from '../components/Gallery'
+import Banner from '../components/Banner'
+import Image from '../asset/home__banner.png'
 
 const Home = () => {
     return (
-        <div>
-            <HomeBody />
+        <div className="home">
+            <Banner
+                img={Image}
+                txt="Chez vous,
+                partout et ailleurs"
+            />
+            <Gallery />
         </div>
     )
 }
