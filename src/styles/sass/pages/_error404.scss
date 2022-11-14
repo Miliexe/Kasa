@@ -1,0 +1,42 @@
+.error404{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &__title{
+        color: $primary;
+        font-size: 96px;
+        font-weight: bold;
+        margin: 0px;
+        padding-top: 40%;
+        @include mq(desktop){
+            font-size: 288px;
+            padding-top: 10%;
+        }
+    }
+
+    &__description{
+        color: $primary;
+        font-weight: $medium;
+        font-size: 18px;
+        padding: 0% 3%;
+        @include mq(tablet){
+            font-size: 36px;
+        }
+
+    }
+    &__backToHome{
+        color: $primary;
+        font-weight: $medium;
+        font-size: 14px;
+        padding: 35% 0%;
+        @include mq(tablet){
+            font-size: 18px;
+            
+        }
+        @include mq(desktop){
+            padding: 8% 0%;
+        }
+    }
+}
