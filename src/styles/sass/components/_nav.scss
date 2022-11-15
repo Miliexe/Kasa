@@ -35,15 +35,15 @@
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      -webkit-animation: anim 0.3s ease forwards;
-      animation: anim 0.6s ease forwards;
+      -webkit-animation: nav 0.3s ease forwards;
+      animation: nav 0.6s ease forwards;
 
-      @-webkit-keyframes anim {
+      @-webkit-keyframes nav {
         to {
           width: 100%;
         }
       }
-      @keyframes anim {
+      @keyframes nav {
         to {
           width: 100%;
         }

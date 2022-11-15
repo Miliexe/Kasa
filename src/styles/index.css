@@ -98,15 +98,15 @@ p {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-animation: anim 0.3s ease forwards;
-  animation: anim 0.6s ease forwards;
+  -webkit-animation: nav 0.3s ease forwards;
+  animation: nav 0.6s ease forwards;
 }
-@-webkit-keyframes anim {
+@-webkit-keyframes nav {
   to {
     width: 100%;
   }
 }
-@keyframes anim {
+@keyframes nav {
   to {
     width: 100%;
   }
@@ -200,6 +200,93 @@ p {
     height: 25%;
     text-align: center;
     padding: 0;
+  }
+}
+
+.slideshow {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: nowrap;
+}
+.slideshow .slide {
+  height: 255px;
+  display: flex;
+}
+@media screen and (min-width: 992px) {
+  .slideshow .slide {
+    height: 415px;
+  }
+}
+.slideshow img {
+  border-radius: 25px;
+  width: 100%;
+  object-fit: cover;
+}
+.slideshow svg {
+  height: 20px;
+}
+@media screen and (min-width: 992px) {
+  .slideshow svg {
+    height: 80px;
+  }
+}
+.slideshow .button {
+  cursor: pointer;
+  top: 118px;
+  position: absolute;
+  background: none;
+  border: none;
+}
+@media screen and (min-width: 992px) {
+  .slideshow .button {
+    top: 170px;
+  }
+}
+.slideshow .button--right {
+  right: 0px;
+}
+@media screen and (min-width: 992px) {
+  .slideshow .button--right {
+    right: 25px;
+  }
+}
+.slideshow .button--left {
+  left: 0px;
+}
+@media screen and (min-width: 992px) {
+  .slideshow .button--left {
+    left: 25px;
+  }
+}
+.slideshow button:hover path {
+  animation: button 0.6s ease forwards;
+}
+@keyframes button {
+  to {
+    fill: #FF6060;
+  }
+}
+.slideshow .indicators {
+  display: none;
+  position: absolute;
+  top: 90%;
+  right: 50%;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 992px) {
+  .slideshow .indicators {
+    display: flex;
+  }
+}
+.slideshow .indicators:hover {
+  animation: indicators 0.6s ease forwards;
+}
+@keyframes indicators {
+  to {
+    color: #FF6060;
   }
 }
 
