@@ -1,10 +1,85 @@
 .slideshow{
-    padding-top: 40px;
-    margin: auto;
-    width: 1240px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
 
-    & img{
+    & .slide{
+        height: 255px;
+        display: flex;
+        @include mq(desktop){
         height: 415px;
+        }
+    }
+    
+    & img{
+        border-radius: 25px;
+        width: 100%;
         object-fit: cover;
+    }
+
+    & svg{
+        height: 20px;
+        @include mq(desktop){
+            height: 80px;
+        }
+    }
+
+    & .button{
+        cursor: pointer;
+        top: 118px;
+        position: absolute;
+        background: none;
+        border: none;
+        @include mq(desktop){
+            top:170px;
+        }
+        &--right{
+            right: 0px;
+            @include mq(desktop){
+                right: 25px;
+            }
+        }
+        &--left{
+            left:0px;
+            @include mq(desktop){
+                left: 25px;
+            }
+        }
+    }
+
+    & button{
+        &:hover{
+            & path{
+                animation: button 0.6s ease forwards;
+                @keyframes button {
+                    to {
+                    fill: $primary;
+                    }
+                }
+             
+            }
+        }      
+    }
+
+    & .indicators{
+        display: none;
+        position: absolute;
+        top:90%;
+        right: 50%;
+        font-weight: $medium;
+        font-size: 18px;
+        color: $secondary;
+        @include mq(desktop){
+            display: flex;
+        }
+        &:hover{
+            animation: indicators 0.6s ease forwards;
+                @keyframes indicators {
+                    to {
+                    color: $primary;
+                    }
+                }
+        }
     }
 }
