@@ -9,6 +9,7 @@
         display: flex;
         @include mq(desktop){
         height: 415px;
+        width: 100%;
         }
     }
     

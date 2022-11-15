@@ -216,6 +216,7 @@ p {
 @media screen and (min-width: 992px) {
   .slideshow .slide {
     height: 415px;
+    width: 100%;
   }
 }
 .slideshow img {
