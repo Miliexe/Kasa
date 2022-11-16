@@ -7,9 +7,9 @@
     & .slide{
         height: 255px;
         display: flex;
+        width: 100%;
         @include mq(desktop){
         height: 415px;
-        width: 100%;
         }
     }
     
