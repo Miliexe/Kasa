@@ -1,14 +1,10 @@
 import Slideshow from '../components/Slideshow'
 import Data from '../data/logements.json'
 import { useParams, Navigate } from 'react-router-dom'
-import { useParams } from 'react-router-dom'
+import Collapse from '../components/Collapse'
 
 function Product() {
-    const [product, setProduct] = useState(Data)
-
     const { id } = useParams()
-
-    useEffect(() => {
     const display = Data.filter((item) => item.id === id)[0]
 
     if (!display) {
@@ -18,6 +14,8 @@ function Product() {
     return (
         <div className="product">
             <Slideshow img={display.pictures} />
+            <Collapse title="Description" content={display.description} />
+            <Collapse title="Equipement" content={display.equipments} />
         </div>
     )
 }
