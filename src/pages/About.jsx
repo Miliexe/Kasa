@@ -7,15 +7,17 @@ function About() {
     return (
         <div className="about">
             <Banner img={Image} />
-            {Data.map((item) => {
-                return (
-                    <Collapse
-                        title={item.title}
-                        content={item.content}
-                        key={item.id}
-                    />
-                )
-            })}
+            <div className="collapses">
+                {Data.map((item) => {
+                    return (
+                        <Collapse
+                            title={item.title}
+                            content={item.content}
+                            key={item.id}
+                        />
+                    )
+                })}
+            </div>
         </div>
     )
 }

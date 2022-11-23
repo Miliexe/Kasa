@@ -14,8 +14,10 @@ function Product() {
     return (
         <div className="product">
             <Slideshow img={display.pictures} />
-            <Collapse title="Description" content={display.description} />
-            <Collapse title="Equipement" content={display.equipments} />
+            <div className="collapses">
+                <Collapse title="Description" content={display.description} />
+                <Collapse title="Equipement" content={display.equipments} />
+            </div>
         </div>
     )
 }

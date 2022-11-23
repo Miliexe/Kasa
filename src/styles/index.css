@@ -159,6 +159,7 @@ p {
   background-color: #F6F6F6;
   height: fit-content;
   color: #FF6060;
+  text-align: left;
 }
 
 .banner {
@@ -556,6 +557,19 @@ p {
   .error404__backToHome {
     padding: 8% 0%;
   }
+}
+
+.product .collapses {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.product .collapse-container {
+  width: 50%;
+}
+.product ul {
+  margin: 0px;
 }
 
 /*# sourceMappingURL=index.css.map */

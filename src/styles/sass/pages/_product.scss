@@ -1,0 +1,14 @@
+.product{
+    & .collapses{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    & .collapse-container{
+        width: 50%;
+    }
+    & ul{
+        margin: 0px;
+    }
+}
