@@ -559,17 +559,62 @@ p {
   }
 }
 
+.product .infos {
+  position: relative;
+}
 .product__title {
+  padding-right: 0px;
   color: #FF6060;
   font-size: 36px;
   font-weight: 400;
   margin-bottom: 0px;
+}
+@media screen and (min-width: 992px) {
+  .product__title {
+    padding-right: 150px;
+  }
 }
 .product__location {
   margin: 0px;
   color: #FF6060;
   font-size: 18px;
   font-weight: 400;
+}
+.product .host {
+  display: flex;
+}
+@media screen and (min-width: 992px) {
+  .product .host {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+}
+.product .host__name {
+  width: min-content;
+  color: #FF6060;
+  text-align: right;
+  padding-top: 10px;
+  font-size: 12px;
+}
+@media screen and (min-width: 576px) {
+  .product .host__name {
+    font-size: 18px;
+  }
+}
+.product .host__picture {
+  width: 32px;
+  height: 32px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 90px;
+}
+@media screen and (min-width: 992px) {
+  .product .host__picture {
+    margin-top: 0px;
+    width: 64px;
+    height: 64px;
+  }
 }
 .product .collapses {
   margin-top: 20px;

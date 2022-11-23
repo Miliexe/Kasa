@@ -17,6 +17,15 @@ function Product() {
             <div className="infos">
                 <h1 className="product__title">{display.title}</h1>
                 <h2 className="product__location">{display.location}</h2>
+                <div className="host">
+                    <div className="host__name">{display.host.name}</div>
+                    <img
+                        className="host__picture"
+                        src={display.host.picture}
+                        alt="host profil"
+                    />
+                </div>
+
                 <div className="collapses">
                     <Collapse
                         title="Description"
