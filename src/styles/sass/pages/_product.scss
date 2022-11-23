@@ -63,21 +63,28 @@
         gap: 15px;
         margin-top: 15px;
         .tag{
-            color: $secondary;
             background-color: $primary;
             width: 84px;
             height: 18px;
             border-radius: 25px;
-            font-size: 10px;
             padding-top: 3px;
-            font-weight: $medium;
-            overflow: hidden;
-            text-align: center;
             @include mq(desktop){
                 width: 115px;
                 height: 25px;
+            }
+        }
+        h6{
+            color: $secondary;
+            overflow: hidden;
+            text-align: center;
+            font-weight: $medium;
+            font-size: 10px;
+            width: min-content;
+            height: 12px;
+            margin: auto;
+            @include mq(desktop){
+                height: 16px;
                 font-size: 14px;
-                padding-top: 4px;
             }
         }
     }

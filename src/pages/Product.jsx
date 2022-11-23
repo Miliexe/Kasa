@@ -23,7 +23,7 @@ function Product() {
                     {display.tags.map((tag) => {
                         return (
                             <li className="tag" key={tag}>
-                                {tag}
+                                <h6>{tag}</h6>
                             </li>
                         )
                     })}

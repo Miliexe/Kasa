@@ -686,23 +686,32 @@ p {
   margin-top: 15px;
 }
 .product .tags .tag {
-  color: #FFFFFF;
   background-color: #FF6060;
   width: 84px;
   height: 18px;
   border-radius: 25px;
-  font-size: 10px;
   padding-top: 3px;
-  font-weight: 400;
-  overflow: hidden;
-  text-align: center;
 }
 @media screen and (min-width: 992px) {
   .product .tags .tag {
     width: 115px;
     height: 25px;
+  }
+}
+.product .tags h6 {
+  color: #FFFFFF;
+  overflow: hidden;
+  text-align: center;
+  font-weight: 400;
+  font-size: 10px;
+  width: min-content;
+  height: 12px;
+  margin: auto;
+}
+@media screen and (min-width: 992px) {
+  .product .tags h6 {
+    height: 16px;
     font-size: 14px;
-    padding-top: 4px;
   }
 }
 .product .collapse-container {
