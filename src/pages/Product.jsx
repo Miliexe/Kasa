@@ -14,9 +14,16 @@ function Product() {
     return (
         <div className="product">
             <Slideshow img={display.pictures} />
-            <div className="collapses">
-                <Collapse title="Description" content={display.description} />
-                <Collapse title="Equipement" content={display.equipments} />
+            <div className="infos">
+                <h1 className="product__title">{display.title}</h1>
+                <h2 className="product__location">{display.location}</h2>
+                <div className="collapses">
+                    <Collapse
+                        title="Description"
+                        content={display.description}
+                    />
+                    <Collapse title="Equipement" content={display.equipments} />
+                </div>
             </div>
         </div>
     )

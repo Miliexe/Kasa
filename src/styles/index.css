@@ -559,8 +559,20 @@ p {
   }
 }
 
+.product__title {
+  color: #FF6060;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+.product__location {
+  margin: 0px;
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 400;
+}
 .product .collapses {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   gap: 30px;
