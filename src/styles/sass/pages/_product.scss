@@ -4,13 +4,14 @@
     }
     &__title{
         padding-right: 0px;
+        padding-top: 10px;
         color: $primary;
         font-size: 18px;
         font-weight: $medium;
         margin-bottom: 0px;
         @include mq(desktop){
             font-size: 36px;
-            padding-right: 150px;
+            padding-right: 170px;
         }
     }
     &__location{
@@ -24,10 +25,10 @@
     }
     & .host{
         display: flex;
-        
+        position: absolute;
+        right: 0px;
+        bottom: -6px;
         @include mq(desktop){
-            position: absolute;
-            right: 0px;
             top: 0px;
         }
 
@@ -80,15 +81,29 @@
             }
         }
     }
-
+    
+    & .collapse-container{
+        width: 100%;
+        margin: 0px;
+        @include mq(desktop){
+            width: 50%;  
+        }
+        & button{
+            height: 30px;
+            @include mq(desktop){
+                height: 52px;
+            }
+        }
+    }
     & .collapses{
         margin-top: 20px;
         display: flex;
-        flex-direction: row;
-        gap: 30px;
-    }
-    & .collapse-container{
-        width: 50%;
+        flex-direction: column;
+        gap: 20px;
+        @include mq(desktop){
+            flex-direction: row;
+            gap: 30px;
+        }
     }
     & ul{
         margin: 0px;

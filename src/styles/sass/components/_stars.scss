@@ -1,0 +1,17 @@
+.stars{
+    margin-top: 20px;
+    position: relative;
+    @include mq(desktop){
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+    & img{
+        width: 15px;
+        height: 15px;
+        @include mq(desktop){
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 
 .collapse {
-    height:47px;
+    height:30px;
     background-color: $primary;
     border-radius: 5px;
     cursor: pointer;
@@ -11,9 +11,16 @@
     outline: none;
     display: block ruby;
     position: relative;
+    @include mq(desktop){
+        height:47px;
+    }
 
     &-container{
-        margin-bottom: 30px;
+        margin-bottom: 20px; 
+        @include mq(desktop){
+            margin-bottom: 30px;    
+        }
+        
     }
     
     &__title{
@@ -24,7 +31,7 @@
         font-size: 13px;
         font-weight: $medium;
         @include mq(desktop){
-            font-size: 18px;
+            font-size: 22px;
         }
     }
 
@@ -41,7 +48,7 @@
     
     &__content{
         border-radius: 5px;
-        padding: 25px 20px;
+        padding: 18px 20px;
         overflow: hidden;
         background-color: $container-bg;
         height: fit-content;
@@ -50,7 +57,8 @@
         font-size: 12px;
         font-weight: $medium;
         @include mq(desktop){
-            font-size: 18px;
+            padding: 30px 20px;
+            font-size: 22px;
             font-weight: $regular;
         }
     }

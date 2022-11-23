@@ -3,6 +3,7 @@ import Data from '../data/logements.json'
 import { useParams, Navigate } from 'react-router-dom'
 import Collapse from '../components/Collapse'
 import Host from '../components/Host'
+import Stars from '../components/Stars'
 
 function Product() {
     const { id } = useParams()
@@ -18,7 +19,6 @@ function Product() {
             <div className="infos">
                 <h1 className="product__title">{display.title}</h1>
                 <h2 className="product__location">{display.location}</h2>
-                <Host name={display.host.name} picture={display.host.picture} />
                 <ul className="tags">
                     {display.tags.map((tag) => {
                         return (
@@ -28,13 +28,12 @@ function Product() {
                         )
                     })}
                 </ul>
-                <div className="collapses">
-                    <Collapse
-                        title="Description"
-                        content={display.description}
-                    />
-                    <Collapse title="Equipement" content={display.equipments} />
-                </div>
+                <Stars rating={display.rating} />
+                <Host name={display.host.name} picture={display.host.picture} />
+            </div>
+            <div className="collapses">
+                <Collapse title="Description" content={display.description} />
+                <Collapse title="Equipement" content={display.equipments} />
             </div>
         </div>
     )
