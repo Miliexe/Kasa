@@ -642,6 +642,34 @@ p {
     height: 64px;
   }
 }
+.product .tags {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: baseline;
+  gap: 15px;
+  margin-top: 15px;
+}
+.product .tags .tag {
+  color: #FFFFFF;
+  background-color: #FF6060;
+  width: 84px;
+  height: 18px;
+  border-radius: 25px;
+  font-size: 10px;
+  padding-top: 3px;
+  font-weight: 400;
+  overflow: hidden;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .product .tags .tag {
+    width: 115px;
+    height: 25px;
+    font-size: 14px;
+    padding-top: 4px;
+  }
+}
 .product .collapses {
   margin-top: 20px;
   display: flex;
