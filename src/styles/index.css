@@ -124,7 +124,7 @@ p {
 }
 
 .collapse {
-  height: 47px;
+  height: 30px;
   background-color: #FF6060;
   border-radius: 5px;
   cursor: pointer;
@@ -136,29 +136,61 @@ p {
   display: block ruby;
   position: relative;
 }
+@media screen and (min-width: 992px) {
+  .collapse {
+    height: 47px;
+  }
+}
 .collapse-container {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  .collapse-container {
+    margin-bottom: 30px;
+  }
 }
 .collapse__title {
   font-weight: 300;
   margin: 0px;
   width: 50%;
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 13px;
+  font-weight: 400;
+}
+@media screen and (min-width: 992px) {
+  .collapse__title {
+    font-size: 22px;
+  }
 }
 .collapse__vector {
   position: absolute;
   right: 12px;
   display: flex;
   top: 35%;
+  width: 19px;
+}
+@media screen and (min-width: 992px) {
+  .collapse__vector {
+    width: 24px;
+  }
 }
 .collapse__content {
   border-radius: 5px;
-  padding: 25px 20px;
+  padding: 18px 20px;
   overflow: hidden;
   background-color: #F6F6F6;
   height: fit-content;
   color: #FF6060;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 400;
+}
+@media screen and (min-width: 992px) {
+  .collapse__content {
+    padding: 30px 20px;
+    font-size: 22px;
+    font-weight: 300;
+  }
 }
 
 .banner {
@@ -288,6 +320,28 @@ p {
 @keyframes indicators {
   to {
     color: #FF6060;
+  }
+}
+
+.stars {
+  margin-top: 20px;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .stars {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+}
+.stars img {
+  width: 15px;
+  height: 15px;
+}
+@media screen and (min-width: 992px) {
+  .stars img {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -556,6 +610,141 @@ p {
   .error404__backToHome {
     padding: 8% 0%;
   }
+}
+
+.product .infos {
+  position: relative;
+}
+.product__title {
+  padding-right: 0px;
+  padding-top: 10px;
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 992px) {
+  .product__title {
+    font-size: 36px;
+    padding-right: 170px;
+  }
+}
+.product__location {
+  margin: 0px;
+  color: #FF6060;
+  font-size: 14px;
+  font-weight: 400;
+}
+@media screen and (min-width: 992px) {
+  .product__location {
+    font-size: 18px;
+  }
+}
+.product .host {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  bottom: -6px;
+}
+@media screen and (min-width: 992px) {
+  .product .host {
+    top: 0px;
+  }
+}
+.product .host__name {
+  width: min-content;
+  color: #FF6060;
+  text-align: right;
+  padding-top: 10px;
+  font-size: 12px;
+}
+@media screen and (min-width: 992px) {
+  .product .host__name {
+    font-size: 18px;
+  }
+}
+.product .host__picture {
+  width: 32px;
+  height: 32px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 90px;
+}
+@media screen and (min-width: 992px) {
+  .product .host__picture {
+    margin-top: 0px;
+    width: 64px;
+    height: 64px;
+  }
+}
+.product .tags {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: baseline;
+  gap: 15px;
+  margin-top: 15px;
+}
+.product .tags .tag {
+  background-color: #FF6060;
+  width: 84px;
+  height: 18px;
+  border-radius: 25px;
+  padding-top: 3px;
+}
+@media screen and (min-width: 992px) {
+  .product .tags .tag {
+    width: 115px;
+    height: 25px;
+  }
+}
+.product .tags h6 {
+  color: #FFFFFF;
+  overflow: hidden;
+  text-align: center;
+  font-weight: 400;
+  font-size: 10px;
+  width: min-content;
+  height: 12px;
+  margin: auto;
+}
+@media screen and (min-width: 992px) {
+  .product .tags h6 {
+    height: 16px;
+    font-size: 14px;
+  }
+}
+.product .collapse-container {
+  width: 100%;
+  margin: 0px;
+}
+@media screen and (min-width: 992px) {
+  .product .collapse-container {
+    width: 50%;
+  }
+}
+.product .collapse-container button {
+  height: 30px;
+}
+@media screen and (min-width: 992px) {
+  .product .collapse-container button {
+    height: 52px;
+  }
+}
+.product .collapses {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 992px) {
+  .product .collapses {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+.product ul {
+  margin: 0px;
 }
 
 /*# sourceMappingURL=index.css.map */

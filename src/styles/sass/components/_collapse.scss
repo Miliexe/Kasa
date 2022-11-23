@@ -1,6 +1,6 @@
 
 .collapse {
-    height:47px;
+    height:30px;
     background-color: $primary;
     border-radius: 5px;
     cursor: pointer;
@@ -11,9 +11,16 @@
     outline: none;
     display: block ruby;
     position: relative;
+    @include mq(desktop){
+        height:47px;
+    }
 
     &-container{
-        margin-bottom: 30px;
+        margin-bottom: 20px; 
+        @include mq(desktop){
+            margin-bottom: 30px;    
+        }
+        
     }
     
     &__title{
@@ -21,7 +28,11 @@
         margin: 0px;
         width: 50%;
         color: $secondary;
-        font-size: 18px;
+        font-size: 13px;
+        font-weight: $medium;
+        @include mq(desktop){
+            font-size: 22px;
+        }
     }
 
     &__vector{
@@ -29,28 +40,26 @@
         right: 12px;
         display: flex;
         top: 35%;
+        width: 19px;
+        @include mq(desktop){
+            width: 24px;
+        }
     }
     
     &__content{
         border-radius: 5px;
-        padding: 25px 20px;
-        // display: none;
+        padding: 18px 20px;
         overflow: hidden;
         background-color: $container-bg;
         height: fit-content;
         color: $primary;
+        text-align: left;
+        font-size: 12px;
+        font-weight: $medium;
+        @include mq(desktop){
+            padding: 30px 20px;
+            font-size: 22px;
+            font-weight: $regular;
+        }
     }
-
-    // &--vector{
-    //     right: 0px;
-    //     display: flex;
-    //     position: relative;
-    //     width: 32px;
-    //     height: 32px;
-    //     background-image: url(../asset/vector.png);
-    //     background-repeat: no-repeat;
-    // }
-    // &--enable{
-
-    // }
 }

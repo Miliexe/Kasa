@@ -13,18 +13,14 @@ import './styles/index.css'
 function App() {
     return (
         <div className="App">
-            <header>
-                <Header />
-            </header>
+            <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/*" element={<Error404 />} />
                 <Route path="/product/:id" element={<Product />} />
             </Routes>
-            <footer className="footer">
-                <Footer />
-            </footer>
+            <Footer />
         </div>
     )
 }

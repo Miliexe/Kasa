@@ -7,8 +7,17 @@ const Collapse = ({ title, content, id }) => {
     const [stateCollapse, setStateCollapse] = useState(0)
     const stateCollapseUpdate = () => {
         setStateCollapse(!stateCollapse)
-        console.log(stateCollapse)
     }
+
+    const collapseContent = Array.isArray(content) ? (
+        <ul>
+            {content.map((string) => {
+                return <li key={string}>{string}</li>
+            })}
+        </ul>
+    ) : (
+        <div>{content}</div>
+    )
 
     return (
         <div className="collapse-container" key={id}>
@@ -26,7 +35,7 @@ const Collapse = ({ title, content, id }) => {
             </button>
 
             {stateCollapse ? (
-                <div className="collapse__content">{content}</div>
+                <div className="collapse__content">{collapseContent}</div>
             ) : null}
         </div>
     )
