@@ -5,18 +5,22 @@
     &__title{
         padding-right: 0px;
         color: $primary;
-        font-size: 36px;
+        font-size: 18px;
         font-weight: $medium;
         margin-bottom: 0px;
         @include mq(desktop){
+            font-size: 36px;
             padding-right: 150px;
         }
     }
     &__location{
         margin: 0px;
         color: $primary;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: $medium;
+        @include mq(desktop){
+            font-size: 18px;
+        }
     }
     & .host{
         display: flex;
@@ -33,7 +37,7 @@
             text-align: right;
             padding-top: 10px;
             font-size: 12px;
-            @include mq(tablet){
+            @include mq(desktop){
                 font-size: 18px;
             }
         }

@@ -21,7 +21,11 @@
         margin: 0px;
         width: 50%;
         color: $secondary;
-        font-size: 18px;
+        font-size: 13px;
+        font-weight: $medium;
+        @include mq(desktop){
+            font-size: 18px;
+        }
     }
 
     &__vector{
@@ -29,6 +33,10 @@
         right: 12px;
         display: flex;
         top: 35%;
+        width: 19px;
+        @include mq(desktop){
+            width: 24px;
+        }
     }
     
     &__content{
@@ -39,5 +47,11 @@
         height: fit-content;
         color: $primary;
         text-align: left;
+        font-size: 12px;
+        font-weight: $medium;
+        @include mq(desktop){
+            font-size: 18px;
+            font-weight: $regular;
+        }
     }
 }

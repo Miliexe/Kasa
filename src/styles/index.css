@@ -144,13 +144,25 @@ p {
   margin: 0px;
   width: 50%;
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 13px;
+  font-weight: 400;
+}
+@media screen and (min-width: 992px) {
+  .collapse__title {
+    font-size: 18px;
+  }
 }
 .collapse__vector {
   position: absolute;
   right: 12px;
   display: flex;
   top: 35%;
+  width: 19px;
+}
+@media screen and (min-width: 992px) {
+  .collapse__vector {
+    width: 24px;
+  }
 }
 .collapse__content {
   border-radius: 5px;
@@ -160,6 +172,14 @@ p {
   height: fit-content;
   color: #FF6060;
   text-align: left;
+  font-size: 12px;
+  font-weight: 400;
+}
+@media screen and (min-width: 992px) {
+  .collapse__content {
+    font-size: 18px;
+    font-weight: 300;
+  }
 }
 
 .banner {
@@ -565,20 +585,26 @@ p {
 .product__title {
   padding-right: 0px;
   color: #FF6060;
-  font-size: 36px;
+  font-size: 18px;
   font-weight: 400;
   margin-bottom: 0px;
 }
 @media screen and (min-width: 992px) {
   .product__title {
+    font-size: 36px;
     padding-right: 150px;
   }
 }
 .product__location {
   margin: 0px;
   color: #FF6060;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
+}
+@media screen and (min-width: 992px) {
+  .product__location {
+    font-size: 18px;
+  }
 }
 .product .host {
   display: flex;
@@ -597,7 +623,7 @@ p {
   padding-top: 10px;
   font-size: 12px;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
   .product .host__name {
     font-size: 18px;
   }
