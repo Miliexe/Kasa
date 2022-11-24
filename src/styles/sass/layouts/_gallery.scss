@@ -27,8 +27,14 @@
         display: flex;
         position: relative;
         background-color: black;
+        @include shadow;
         &:hover{
-            background: linear-gradient(180deg, rgba(255,96,96,1) 0%, rgba(0,0,0,1) 80%);        
+            background: linear-gradient(180deg, rgba(255,96,96,1) 0%, rgba(0,0,0,1) 80%); 
+            @include shadow-hover;
+            img {
+                transition: .6s;
+                opacity: .2;
+            }          
         }
         @include mq(desktop){
             width: auto;
@@ -43,11 +49,7 @@
             @include mq(desktop){
                 width: 340px;
                 height: 340px;   
-            }
-            &:hover{
-                transition: .6s;
-                opacity: .2;
-            }    
+            } 
         }
 
         & .card__title{
@@ -71,10 +73,5 @@
                 padding-right: 17%;
             }
         }
-
-        @include shadow;
-        &:hover{
-            @include shadow-hover;
-        } 
     }
 }

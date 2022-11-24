@@ -6,7 +6,7 @@ const Tags = ({ tags }) => {
             {tags.map((tag) => {
                 return (
                     <li className="tag" key={tag}>
-                        <h6>{tag}</h6>
+                        <span className="tag__content">{tag}</span>
                     </li>
                 )
             })}

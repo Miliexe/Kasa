@@ -3,7 +3,7 @@ import logo from '../asset/logo.png'
 
 const Logo = () => {
     return (
-        <div>
+        <div className="logo">
             <img
                 className="logo--mobile logo--desktop"
                 src={logo}
