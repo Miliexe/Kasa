@@ -20,9 +20,11 @@
     }
 
     &__logo{
-        width: 122px;
+        .logo--white{
+            width: 122px;
+        }
     }
-
+        
     &__license{
         color: $secondary;
         font-size: 12px;
